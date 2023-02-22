@@ -16,5 +16,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Millar McIlwain/Documents/Java/openjfx-19.0.2.1_windows-x64_bin-sdk/javafx-sdk-19.0.2.1/lib/javafx.fxml.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
