@@ -24,6 +24,7 @@ public class ShowAllStuff {
 		Collections.sort(employees, new CompareEmployeeNameReverse());
 		viewAll(employees);
 		
+		// sort by age 
 		Collections.sort(employees, new CompareEmployeeAge());
 		viewAll(employees);
 		
