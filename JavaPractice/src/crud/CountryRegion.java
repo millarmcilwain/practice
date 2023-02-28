@@ -2,5 +2,5 @@ package crud;
 
 public enum CountryRegion {
 
-	Asia, Europe, Africa;
+	Asia, Europe, Africa, Latin_America, Oceania, Generic;
 }

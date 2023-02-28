@@ -37,12 +37,12 @@ public class StarterApp {
 			countryRegion=result[1];
 			pop2 = population.parseInt(result[2]);
 			area2 = area.parseInt(result[3]);
-		
-			mySortedMap.put(mapKey, new Country(countryName, countryRegion, pop2, area));
+			
+			mySortedMap.put(mapKey, new Country(countryName, countryRegion, pop2, area2));
 			line = bufferedReader.readLine();
 			mapKey++;
 			}
-			// nearly finished, area from Country class is appearing as 0 for everything
+			
 			for (int loop =0; loop<mySortedMap.size(); loop++) {
 				Country t = mySortedMap.get(loop);
 				t.printAll();
