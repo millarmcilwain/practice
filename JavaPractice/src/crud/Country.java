@@ -2,7 +2,7 @@ package crud;
 
 public class Country {
 
-	private String name;
+	private String name, region;
 	private int population, area;
 	double density;
 	
@@ -11,12 +11,13 @@ public class Country {
 		
 	}
 	
-	public Country(String name, int population, int area, double density) {
+	public Country(String name, String region, int population, int area) {
 		super();
 		this.name = name;
+		this.region = region;
 		this.population = population;
 		this.area = area;
-		this.density = density;
+	
 	}
 
 	public String getName() {
@@ -25,6 +26,16 @@ public class Country {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
+	public String getRegion() {
+		return region;
+	}
+
+	public void setRegion(String region) {
+		this.region = region;
+	}
+
 	public int getPopulation() {
 		return population;
 	}
@@ -46,6 +57,10 @@ public class Country {
 	
 	public void popDensity() {
 		System.out.println((this.getPopulation()/this.getDensity()));
+	}
+	
+	public void printAll() {
+		System.out.println(this.getName()+" " +this.getRegion() +" " +this.getPopulation() +" " +this.getArea() );
 	}
 	
 	
