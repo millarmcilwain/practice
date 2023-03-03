@@ -74,7 +74,7 @@ public class FootballTeam {
 	 * @param gamesPlayed the gamesPlayed to set
 	 */
 	public void setGamesPlayed(int gamesPlayed) {
-		this.gamesPlayed = gamesPlayed;
+		this.gamesPlayed += gamesPlayed;
 	}
 	/**
 	 * @return the goalsFor
@@ -86,7 +86,7 @@ public class FootballTeam {
 	 * @param goalsFor the goalsFor to set
 	 */
 	public void setGoalsFor(int goalsFor) {
-		this.goalsFor = goalsFor;
+		this.goalsFor += goalsFor;
 	}
 	/**
 	 * @return the goalsAgainst
@@ -98,7 +98,7 @@ public class FootballTeam {
 	 * @param goalsAgainst the goalsAgainst to set
 	 */
 	public void setGoalsAgainst(int goalsAgainst) {
-		this.goalsAgainst = goalsAgainst;
+		this.goalsAgainst += goalsAgainst;
 	}
 	/**
 	 * @return the wins
@@ -110,7 +110,7 @@ public class FootballTeam {
 	 * @param wins the wins to set
 	 */
 	public void setWins(int wins) {
-		this.wins = wins;
+		this.wins += wins;
 	}
 	/**
 	 * @return the draws
@@ -122,7 +122,7 @@ public class FootballTeam {
 	 * @param draws the draws to set
 	 */
 	public void setDraws(int draws) {
-		this.draws = draws;
+		this.draws += draws;
 	}
 	/**
 	 * @return the losses
@@ -134,7 +134,7 @@ public class FootballTeam {
 	 * @param losses the losses to set
 	 */
 	public void setLosses(int losses) {
-		this.losses = losses;
+		this.losses += losses;
 	}
 	/**
 	 * @return the points
@@ -146,7 +146,7 @@ public class FootballTeam {
 	 * @param points the points to set
 	 */
 	public void setPoints(int points) {
-		this.points = points;
+		this.points += points;
 	}
 
 	@Override
