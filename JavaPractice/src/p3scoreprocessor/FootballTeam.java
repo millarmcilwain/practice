@@ -23,6 +23,13 @@ public class FootballTeam {
 		
 	}
 	
+	public FootballTeam(String teamName, int goalsFor, int goalsAgainst) {
+		this.teamName = teamName;
+		this.goalsFor = goalsFor;
+		this.goalsAgainst = goalsAgainst;
+	}
+	
+	
 	/**
 	 * @param teamName
 	 * @param gamesPlayed

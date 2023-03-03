@@ -1,0 +1,45 @@
+<%- include("top") %>
+<div class="container">
+    <h2 class="name">Contact </h2>
+    <h1 class="name"> <strong> Harley</strong> Peeps</h1>
+    <a href="/" class="contact">
+        <h2 class="name pl">BACK</h2>
+    </a>
+</div>
+
+<!-- Skills and intrest section -->
+<div class="container">
+
+    <!-- Achievements -->
+    <div class="container">
+        <form method="POST" id="send" action="/contact">
+            <div class="cardform">
+
+                <%  if (typeof sentBack != 'undefined') {  %>  
+                
+                <p>email sent to : <%= sentBack.email_f %></p>
+            <% } else {  %>
+                <div class=" skill-level2 ">
+                    <span>+</span>
+                    <span>email</span>
+                    <span><input class="field" name="email_f"></span>
+                </div>
+
+                <div class="">
+                    <textarea class="texta" name="message_f"></textarea>
+                    
+                </div>
+                
+            </div>
+            <div class="cardsub">
+                <div class="skill-level">
+                    <input type="submit" value=" send ">
+                </div>
+                <% } %>
+            </div>
+        </form>
+
+    </div>
+
+
+<%- include("foot") %>

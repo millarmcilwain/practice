@@ -1,0 +1,23 @@
+<%- include('top')  %> 
+    <div class="jumbo">
+        <h1> <%= tdata  %>  </h1>
+        <p></p>
+    </div>
+    <main>
+        <p>Below is a list of staff.</p>
+
+       <code> <%= rows[1].first_name  %></code>
+       <ul>
+       <%
+        rows.forEach( (row) => { %> 
+            
+            <a href=/member?=<%= row.id %> > <li> <%= row.first_name %> <%=row.last_name %></li></a>
+            
+            <%
+
+        });
+       %>
+    </ul>
+    </main>
+</body>
+</html>
