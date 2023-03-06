@@ -23,15 +23,8 @@ public class TeamProcessing {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
 		
-		// debug file reader some more 
-		//readStoreTeams("results.txt");
-		Map<String, FootballTeam> testMap = countTeamStats(readStoreTeams("results.txt"));
-		
-		for (FootballTeam f : testMap.values()) {
-			System.out.println(f.getTeamName() +" " +f.getGoalsFor() +" " +f.getGoalsAgainst());
-		}
+		processTeams(readStoreTeams("results.txt"));
 		
 	}
 	
@@ -45,21 +38,17 @@ public static ArrayList<String[]> readStoreTeams(String file) {
 		
 		String[] teamsSplit;
 		ArrayList<String[]> dataArray = new ArrayList<String[]>();
-		String readResultLine;
 		
 
 		try {
 			BufferedReader bufferedReader = new BufferedReader(new FileReader(new File(file)));
 
-			
-			readResultLine = bufferedReader.readLine();
+			do {
+			teamsSplit=bufferedReader.readLine().split(" ");
+			dataArray.add(teamsSplit);
 
-
-			while (readResultLine!=null) {
-				teamsSplit=readResultLine.split(" ");
-				dataArray.add(teamsSplit);
-			};
-			
+			}
+			while (bufferedReader.readLine()!=null);
 				
 
 			
@@ -90,22 +79,19 @@ public static void processTeams(ArrayList<String[]> dataArray) {
 		*/
 		for (String t : teamsMap.keySet()) {
 			
-			System.out.println(t.toString() +teamsMap.get(t) +" ");
+			System.out.println(t.toString() +teamsMap.get(t));
 		}
 		
 	
 	}
 
-public static Map<String, FootballTeam> countTeamStats(ArrayList<String[]> teamData) {
+public static void countTeamStats(ArrayList<String[]> teamData) {
 	
-		
-
-		Map<String, FootballTeam> teamMap = new HashMap<String, FootballTeam>();
+		FootballTeam team1 = new FootballTeam();
+		FootballTeam team2 = new FootballTeam();
 		
 	
 		for (String[] s : teamData) {
-			FootballTeam team1 = new FootballTeam();
-			FootballTeam team2 = new FootballTeam();
 			team1.setTeamName(s[0]);
 			team1.setGoalsFor(Integer.parseInt(s[1]));
 			team1.setGoalsAgainst(Integer.parseInt(s[2]));
@@ -130,29 +116,8 @@ public static Map<String, FootballTeam> countTeamStats(ArrayList<String[]> teamD
 			}
 			
 			//check if hashmap already contains key with that name, if not create new, if not add the scores the previous ones 
-			if (teamMap.containsKey(team1.getTeamName())) {
-				teamMap.get(team1.getTeamName()).setWins(team1.getWins());
-				teamMap.get(team1.getTeamName()).setLosses(team1.getLosses());
-				teamMap.get(team1.getTeamName()).setDraws(team1.getDraws());
-				teamMap.get(team1.getTeamName()).setPoints(team1.getPoints());
-			} else if (!teamMap.containsKey(team1.getTeamName())) {
-				teamMap.put(team1.getTeamName(), team1);
-			}
-			
-			if (teamMap.containsKey(team2.getTeamName())) {
-				teamMap.get(team2.getTeamName()).setWins(team2.getWins());
-				teamMap.get(team2.getTeamName()).setLosses(team2.getLosses());
-				teamMap.get(team2.getTeamName()).setDraws(team2.getDraws());
-				teamMap.get(team2.getTeamName()).setPoints(team2.getPoints());
-			} else if (!teamMap.containsKey(team2.getTeamName())) {
-				teamMap.put(team2.getTeamName(), team2);
-			}
-
-			
-			
 		}
 	
-		return teamMap;
 	
 }
 }
