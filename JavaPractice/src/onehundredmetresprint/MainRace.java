@@ -17,8 +17,7 @@ public class MainRace {
 		
 		System.out.println(Thread.activeCount());
 		System.out.println(Thread.currentThread().getName());
-		
-		
+
 	 }
 		
 		
