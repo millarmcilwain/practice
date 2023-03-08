@@ -12,6 +12,12 @@ public class Beer {
 	String beerName, BeerStyle, Country;
 	double alcoholPercentage;
 
+	
+	public Beer() {
+		
+	}
+	
+	
 	/**
 	 * @param beerName
 	 * @param beerStyle
@@ -84,8 +90,8 @@ public class Beer {
 
 	@Override
 	public String toString() {
-		return "Beer [beerName=" + beerName + ", BeerStyle=" + BeerStyle + ", Country=" + Country
-				+ ", alcoholPercentage=" + alcoholPercentage + "]";
+		return "Name: " + beerName + ", Style: " + BeerStyle + ", Country: " + Country
+				+ ", Alcohol Percentage :" + alcoholPercentage ;
 	}
 
 }
