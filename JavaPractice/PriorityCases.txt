@@ -1,0 +1,180 @@
+First Name : Jacob
+Last Name : Adams
+Age : 19
+Wait Time : 235mins
+Severity Level : SEV
+Triaged:true
+First Name : William
+Last Name : Anderson
+Age : 18
+Wait Time : 229mins
+Severity Level : SEV
+Triaged:true
+First Name : Emily
+Last Name : Martinez
+Age : 2
+Wait Time : 218mins
+Severity Level : SEV
+Triaged:true
+First Name : Amelia
+Last Name : Hernandez
+Age : 40
+Wait Time : 188mins
+Severity Level : SEV
+Triaged:false
+First Name : Elijah
+Last Name : Collins
+Age : 35
+Wait Time : 174mins
+Severity Level : SEV
+Triaged:true
+First Name : Noah
+Last Name : Patel
+Age : 3
+Wait Time : 155mins
+Severity Level : SEV
+Triaged:true
+First Name : Charlotte
+Last Name : Brown
+Age : 56
+Wait Time : 143mins
+Severity Level : SEV
+Triaged:false
+First Name : Alexander
+Last Name : Miller
+Age : 54
+Wait Time : 138mins
+Severity Level : SEV
+Triaged:true
+First Name : Chloe
+Last Name : Baker
+Age : 64
+Wait Time : 127mins
+Severity Level : SEV
+Triaged:true
+First Name : Isabella
+Last Name : Lee
+Age : 26
+Wait Time : 98mins
+Severity Level : SEV
+Triaged:false
+First Name : Ethan
+Last Name : Davis
+Age : 80
+Wait Time : 73mins
+Severity Level : SEV
+Triaged:false
+First Name : Harper
+Last Name : Hall
+Age : 73
+Wait Time : 64mins
+Severity Level : SEV
+Triaged:true
+First Name : Jackson
+Last Name : Taylor
+Age : 88
+Wait Time : 201mins
+Severity Level : MOD
+Triaged:false
+First Name : Benjamin
+Last Name : Wilson
+Age : 45
+Wait Time : 192mins
+Severity Level : MOD
+Triaged:true
+First Name : Lucas
+Last Name : Robinson
+Age : 2
+Wait Time : 166mins
+Severity Level : MOD
+Triaged:false
+First Name : Benjamin
+Last Name : Wright
+Age : 1
+Wait Time : 110mins
+Severity Level : MOD
+Triaged:true
+First Name : Olivia
+Last Name : Smith
+Age : 21
+Wait Time : 107mins
+Severity Level : MOD
+Triaged:true
+First Name : James
+Last Name : Garcia
+Age : 75
+Wait Time : 91mins
+Severity Level : MOD
+Triaged:true
+First Name : Ava
+Last Name : Johnson
+Age : 12
+Wait Time : 79mins
+Severity Level : MOD
+Triaged:false
+First Name : Sophia
+Last Name : Davis
+Age : 67
+Wait Time : 52mins
+Severity Level : MOD
+Triaged:false
+First Name : Abigail
+Last Name : Wright
+Age : 48
+Wait Time : 17mins
+Severity Level : MOD
+Triaged:false
+First Name : Mia
+Last Name : Thompson
+Age : 83
+Wait Time : 212mins
+Severity Level : MIL
+Triaged:true
+First Name : Ava
+Last Name : Thompson
+Age : 4
+Wait Time : 181mins
+Severity Level : MIL
+Triaged:true
+First Name : Sophia
+Last Name : Lee
+Age : 0
+Wait Time : 161mins
+Severity Level : MIL
+Triaged:false
+First Name : Ethan
+Last Name : Wright
+Age : 36
+Wait Time : 119mins
+Severity Level : MIL
+Triaged:false
+First Name : William
+Last Name : Davis
+Age : 5
+Wait Time : 60mins
+Severity Level : MIL
+Triaged:false
+First Name : Emily
+Last Name : Clark
+Age : 77
+Wait Time : 42mins
+Severity Level : MIL
+Triaged:false
+First Name : Oliver
+Last Name : Gonzalez
+Age : 61
+Wait Time : 33mins
+Severity Level : MIL
+Triaged:true
+First Name : Madison
+Last Name : Barker
+Age : 9
+Wait Time : 25mins
+Severity Level : MIL
+Triaged:true
+First Name : Ethan
+Last Name : Martin
+Age : 29
+Wait Time : 6mins
+Severity Level : MIL
+Triaged:true
