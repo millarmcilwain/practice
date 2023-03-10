@@ -81,21 +81,22 @@ public class LetterWriter {
 	public static void writeToFile(ArrayList<String[]> studentArray) {
 
 		for (String[] s : studentArray) {
-			
-			long differenceInMinutes = differenceInMinutes(s[2], s[3]);
-			if (differenceInMinutes<100) {
-			File file = new File(s[0] + ".txt");
 
-			if (!file.exists()) {
+			long differenceInMinutes = differenceInMinutes(s[2], s[3]);
+			if (differenceInMinutes < 100) {
+				File file = new File(s[0] + ".txt");
+
+				if (!file.exists()) {
 
 					try {
 						file.createNewFile();
 					} catch (IOException e) {
-						
+
 						e.printStackTrace();
-					}}
-			
-					try {
+					}
+				}
+
+				try {
 					BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
 
 					bufferedWriter.write(composeLetter(s[0], s[1], s[2], s[3], s[4], differenceInMinutes));
@@ -105,9 +106,7 @@ public class LetterWriter {
 				}
 			}
 		}
-		}
-
-
+	}
 
 	public static String composeLetter(String name, String studentNumber, String logonTime, String logoffTime,
 			String email, long duration) {
@@ -117,18 +116,18 @@ public class LetterWriter {
 				+ studentNumber + "\nLogon Time: " + logonTime + "\nLogoff Time: " + logoffTime + "\nEmail: " + email;
 
 	}
-	
+
 	public static long differenceInMinutes(String logonString, String logoffString) {
 		// Parse logon and logoff times into LocalTime objects
 		LocalTime logonTime = LocalTime.parse(logonString);
 		LocalTime logoffTime = LocalTime.parse(logoffString);
 
-		// calculate the difference between the times 
+		// calculate the difference between the times
 		Duration duration = Duration.between(logonTime, logoffTime);
 
 		// get the difference in minutes
 		long diffInMinutes = duration.toMinutes();
-		
+
 		return diffInMinutes;
 	}
 
